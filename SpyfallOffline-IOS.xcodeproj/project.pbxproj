@@ -13,6 +13,7 @@
 		7639BE0326C439D30043BA10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7639BE0226C439D30043BA10 /* Preview Assets.xcassets */; };
 		7639BE0E26C439D30043BA10 /* SpyfallOffline_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE0D26C439D30043BA10 /* SpyfallOffline_IOSTests.swift */; };
 		7639BE1926C439D30043BA10 /* SpyfallOffline_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE1826C439D30043BA10 /* SpyfallOffline_IOSUITests.swift */; };
+		7639BE2926C43C810043BA10 /* MenuMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE2826C43C810043BA10 /* MenuMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		7639BE1426C439D30043BA10 /* SpyfallOffline-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpyfallOffline-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7639BE1826C439D30043BA10 /* SpyfallOffline_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyfallOffline_IOSUITests.swift; sourceTree = "<group>"; };
 		7639BE1A26C439D30043BA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7639BE2826C43C810043BA10 /* MenuMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				7639BDFB26C439D10043BA10 /* SpyfallOffline_IOSApp.swift */,
 				7639BDFD26C439D10043BA10 /* ContentView.swift */,
+				7639BE2826C43C810043BA10 /* MenuMain.swift */,
 				7639BDFF26C439D30043BA10 /* Assets.xcassets */,
 				7639BE0426C439D30043BA10 /* Info.plist */,
 				7639BE0126C439D30043BA10 /* Preview Content */,
@@ -261,6 +264,7 @@
 			files = (
 				7639BDFE26C439D10043BA10 /* ContentView.swift in Sources */,
 				7639BDFC26C439D10043BA10 /* SpyfallOffline_IOSApp.swift in Sources */,
+				7639BE2926C43C810043BA10 /* MenuMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

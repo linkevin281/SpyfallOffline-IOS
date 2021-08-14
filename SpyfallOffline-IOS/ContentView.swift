@@ -19,9 +19,13 @@ struct ContentView: View {
         case "Menu2":
             Menu2(viewState: viewState)
         case "NameInput":
-            NameInput()
+            NameInput(viewState: viewState)
         case "HowtoPlay":
             HowToPlay(viewState: viewState)
+        case "intermediate":
+            intermediate(viewState: viewState)
+        case "GameState":
+            GameState(viewState: viewState)
         default:
             MainMenu(viewState: viewState)
         }

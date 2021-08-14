@@ -7,15 +7,30 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
+    @StateObject var viewState: ViewState
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        switch viewState.currentState {
+        case "MainMenu":
+            MainMenu(viewState: viewState)
+        case "Menu2":
+            Menu2(viewState: viewState)
+        case "NameInput":
+            NameInput()
+        case "HowtoPlay":
+            HowToPlay(viewState: viewState)
+        default:
+            MainMenu(viewState: viewState)
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainMenu(viewState: ViewState())
     }
 }

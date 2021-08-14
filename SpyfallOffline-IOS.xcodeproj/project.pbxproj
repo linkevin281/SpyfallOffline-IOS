@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763183C126C7107F009003B5 /* Menu2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763183C026C7107F009003B5 /* Menu2.swift */; };
+		763183CD26C7369C009003B5 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763183CC26C7369C009003B5 /* ViewState.swift */; };
+		763183D026C73A19009003B5 /* HowToPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763183CF26C73A19009003B5 /* HowToPlay.swift */; };
+		763183D226C76181009003B5 /* NameInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763183D126C76181009003B5 /* NameInput.swift */; };
+		763183D426C765FE009003B5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763183D326C765FE009003B5 /* Player.swift */; };
 		7639BDFC26C439D10043BA10 /* SpyfallOffline_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BDFB26C439D10043BA10 /* SpyfallOffline_IOSApp.swift */; };
 		7639BDFE26C439D10043BA10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BDFD26C439D10043BA10 /* ContentView.swift */; };
 		7639BE0026C439D30043BA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7639BDFF26C439D30043BA10 /* Assets.xcassets */; };
 		7639BE0326C439D30043BA10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7639BE0226C439D30043BA10 /* Preview Assets.xcassets */; };
 		7639BE0E26C439D30043BA10 /* SpyfallOffline_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE0D26C439D30043BA10 /* SpyfallOffline_IOSTests.swift */; };
 		7639BE1926C439D30043BA10 /* SpyfallOffline_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE1826C439D30043BA10 /* SpyfallOffline_IOSUITests.swift */; };
-		7639BE2926C43C810043BA10 /* MenuMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE2826C43C810043BA10 /* MenuMain.swift */; };
+		7639BE2926C43C810043BA10 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE2826C43C810043BA10 /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		763183C026C7107F009003B5 /* Menu2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu2.swift; sourceTree = "<group>"; };
+		763183CC26C7369C009003B5 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		763183CF26C73A19009003B5 /* HowToPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay.swift; sourceTree = "<group>"; };
+		763183D126C76181009003B5 /* NameInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInput.swift; sourceTree = "<group>"; };
+		763183D326C765FE009003B5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7639BDF826C439D10043BA10 /* SpyfallOffline-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpyfallOffline-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7639BDFB26C439D10043BA10 /* SpyfallOffline_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyfallOffline_IOSApp.swift; sourceTree = "<group>"; };
 		7639BDFD26C439D10043BA10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,7 +56,7 @@
 		7639BE1426C439D30043BA10 /* SpyfallOffline-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpyfallOffline-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7639BE1826C439D30043BA10 /* SpyfallOffline_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyfallOffline_IOSUITests.swift; sourceTree = "<group>"; };
 		7639BE1A26C439D30043BA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7639BE2826C43C810043BA10 /* MenuMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuMain.swift; sourceTree = "<group>"; };
+		7639BE2826C43C810043BA10 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		763183C626C71F1A009003B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				763183CC26C7369C009003B5 /* ViewState.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		7639BDEF26C439D10043BA10 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +115,17 @@
 		7639BDFA26C439D10043BA10 /* SpyfallOffline-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				763183C626C71F1A009003B5 /* Helpers */,
+				763183C026C7107F009003B5 /* Menu2.swift */,
 				7639BDFB26C439D10043BA10 /* SpyfallOffline_IOSApp.swift */,
 				7639BDFD26C439D10043BA10 /* ContentView.swift */,
-				7639BE2826C43C810043BA10 /* MenuMain.swift */,
+				7639BE2826C43C810043BA10 /* MainMenu.swift */,
+				763183CF26C73A19009003B5 /* HowToPlay.swift */,
 				7639BDFF26C439D30043BA10 /* Assets.xcassets */,
 				7639BE0426C439D30043BA10 /* Info.plist */,
 				7639BE0126C439D30043BA10 /* Preview Content */,
+				763183D126C76181009003B5 /* NameInput.swift */,
+				763183D326C765FE009003B5 /* Player.swift */,
 			);
 			path = "SpyfallOffline-IOS";
 			sourceTree = "<group>";
@@ -263,8 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7639BDFE26C439D10043BA10 /* ContentView.swift in Sources */,
+				763183D026C73A19009003B5 /* HowToPlay.swift in Sources */,
+				763183C126C7107F009003B5 /* Menu2.swift in Sources */,
+				763183CD26C7369C009003B5 /* ViewState.swift in Sources */,
+				763183D426C765FE009003B5 /* Player.swift in Sources */,
 				7639BDFC26C439D10043BA10 /* SpyfallOffline_IOSApp.swift in Sources */,
-				7639BE2926C43C810043BA10 /* MenuMain.swift in Sources */,
+				763183D226C76181009003B5 /* NameInput.swift in Sources */,
+				7639BE2926C43C810043BA10 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

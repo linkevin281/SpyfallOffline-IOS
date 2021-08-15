@@ -61,7 +61,7 @@ struct MainMenu: View {
                     Text("   " + "\(Int(playerCount))" + "   ")
                         .frame(width: 100)
                     Button(action: {
-                        Data.numberOfPlayers = Int(playerCount)
+                        GameData.numberOfPlayers = Int(playerCount)
                         viewState.currentState = "NameInput"
                     }) {
                         Text("Continue")

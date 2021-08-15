@@ -61,6 +61,11 @@ struct NameInput: View {
             }
             Button(action: {
                 viewState.currentState = "GameState"
+                if let fileLocation = Bundle.main.url(forResource: "spyfall1", withExtension: "json") {
+                    if let data = try? Data(contentsOf: fileLocation) {
+                        GameData.parse(json: data)
+                    }
+                }
                 
             }) {
                 Text("Start Game")

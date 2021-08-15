@@ -1,0 +1,312 @@
+{
+    "id": "spyfall2",
+    "name": "Spyfall 2",
+    "locations": [
+        {
+            "name": "race track",
+            "roles": [
+                "team owner",
+                "driver",
+                "engineer",
+                "spectator",
+                "referee",
+                "mechanic",
+                "food vendor",
+                "commentator",
+                "bookmaker",
+                "spectator"
+            ]
+        },
+        {
+            "name": "art museum",
+            "roles": [
+                "ticket seller",
+                "student",
+                "visitor",
+                "teacher",
+                "security guard",
+                "painter",
+                "art collector",
+                "art critic",
+                "photographer",
+                "tourist"
+            ]
+        },
+        {
+            "name": "vineyard",
+            "roles": [
+                "gardener",
+                "gourmet guide",
+                "winemaker",
+                "exporter",
+                "butler",
+                "wine taster",
+                "sommelier",
+                "owner",
+                "vineyard manager",
+                "oenologist"
+            ]
+        },
+        {
+            "name": "baseball stadium",
+            "roles": [
+                "pitcher",
+                "catcher",
+                "commentator",
+                "spectator",
+                "security guard",
+                "umpire",
+                "food vendor",
+                "manager",
+                "first baseman",
+                "shortstop",
+                "outfielder",
+                "second baseman",
+                "third baseman",
+                "mascot",
+                "team owner"
+            ]
+        },
+        {
+            "name": "library",
+            "roles": [
+                "old man",
+                "journalist",
+                "author",
+                "volunteer",
+                "know-it-all",
+                "student",
+                "librarian",
+                "loudmouth",
+                "book fanatic",
+                "nerd"
+            ]
+        },
+        {
+            "name": "cat show",
+            "roles": [
+                "ljudge",
+                "lcat-handler",
+                "lveterinarian",
+                "lsecurity guard",
+                "lcat trainer",
+                "lcrazy cat lady",
+                "lanimal lover",
+                "lcat owner",
+                "lcat",
+                "lcat"
+            ]
+        },
+        {
+            "name": "retirement home",
+            "roles": [
+                "relative",
+                "cribbage player",
+                "old person",
+                "nurse",
+                "janitor",
+                "cook",
+                "blind person",
+                "psychologist",
+                "old person",
+                "nurse"
+            ]
+        },
+        {
+            "name": "jail",
+            "roles": [
+                "wrongly accused man",
+                "cctv operator",
+                "guard",
+                "visitor",
+                "lawyer",
+                "janitor",
+                "jailkeeper",
+                "criminal",
+                "correctional officer",
+                "maniac"
+            ]
+        },
+        {
+            "name": "construction site",
+            "roles": [
+                "free-roaming toddler",
+                "contractor",
+                "crane driver",
+                "trespasser",
+                "safety officer",
+                "electrician",
+                "engineer",
+                "architect",
+                "construction worker",
+                "construction worker"
+            ]
+        },
+        {
+            "name": "the united nations",
+            "roles": [
+                "diplomat",
+                "interpreter",
+                "blowhard",
+                "tourist",
+                "napping delegate",
+                "journalist",
+                "secretary of state",
+                "speaker",
+                "secretary-general",
+                "lobbyist"
+            ]
+        },
+        {
+            "name": "candy factory",
+            "roles": [
+                "candy maker",
+                "pastry chef",
+                "visitor",
+                "taster",
+                "truffle maker",
+                "supply worker",
+                "packager",
+                "inspector",
+                "machine operator",
+                "janitor"
+            ]
+        },
+        {
+            "name": "subway",
+            "roles": [
+                "tourist",
+                "subway operator",
+                "ticket inspector",
+                "pregnant lady",
+                "pickpocket",
+                "cleaner",
+                "businessman",
+                "ticket seller",
+                "old lady",
+                "blind man"
+            ]
+        },
+        {
+            "name": "coal mine",
+            "roles": [
+                "safety inspector",
+                "miner",
+                "overseer",
+                "dump truck operator",
+                "driller",
+                "coordinator",
+                "blasting engineer",
+                "solid waste engineer",
+                "worker"
+            ]
+        },
+        {
+            "name": "cemetery",
+            "roles": [
+                "priest",
+                "grave robber",
+                "poet",
+                "mourning person",
+                "gatekeeper",
+                "dead person",
+                "relative",
+                "flower seller",
+                "grave digger",
+                "gothic girl"
+            ]
+        },
+        {
+            "name": "rock concert",
+            "roles": [
+                "dancer",
+                "singer",
+                "fan",
+                "guitarist",
+                "drummer",
+                "roadie",
+                "stage diver",
+                "security guard",
+                "bassist",
+                "sound technician"
+            ]
+        },
+        {
+            "name": "jazz club",
+            "roles": [
+                "bouncer",
+                "drummer",
+                "pianist",
+                "saxophonist",
+                "singer",
+                "jazz fanatic",
+                "dancer",
+                "barman",
+                "vip",
+                "waiter"
+            ]
+        },
+        {
+            "name": "wedding",
+            "roles": [
+                "ring bearer",
+                "groom",
+                "bride",
+                "officiant",
+                "photographer",
+                "flower girl",
+                "father of the bride",
+                "wedding crasher",
+                "best man",
+                "maid of honor",
+                "relative"
+            ]
+        },
+        {
+            "name": "gas station",
+            "roles": [
+                "car enthusiast",
+                "service attendant",
+                "service attendant",
+                "shopkeeper",
+                "customer",
+                "car washer",
+                "cashier",
+                "customer",
+                "climate change activist",
+                "manager"
+            ]
+        },
+        {
+            "name": "harbor docks",
+            "roles": [
+                "loader",
+                "loader",
+                "salty old pirate",
+                "captain",
+                "sailor",
+                "fisherman",
+                "exporter",
+                "cargo overseer",
+                "cargo inspector",
+                "smuggler"
+            ]
+        },
+        {
+            "name": "sightseeing bus",
+            "roles": [
+                "old man",
+                "lone tourist",
+                "driver",
+                "annoying child",
+                "tourist",
+                "tourist",
+                "tourist",
+                "tour guide",
+                "photographer",
+                "lost person"
+            ]
+        }
+    ]
+}
+

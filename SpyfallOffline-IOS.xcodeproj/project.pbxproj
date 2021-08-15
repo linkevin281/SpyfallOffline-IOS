@@ -133,17 +133,10 @@
 		7639BDFA26C439D10043BA10 /* SpyfallOffline-IOS */ = {
 			isa = PBXGroup;
 			children = (
-				76AC4EA126C8860A001274C4 /* spyfall1.json */,
-				76AC4EA026C8860A001274C4 /* spyfall2.json */,
+				76AC4EAB26C89B28001274C4 /* Assets */,
+				76AC4EA926C89AF9001274C4 /* Views */,
 				763183C626C71F1A009003B5 /* Helpers */,
-				763183C026C7107F009003B5 /* Menu2.swift */,
 				7639BDFB26C439D10043BA10 /* SpyfallOffline_IOSApp.swift */,
-				7639BDFD26C439D10043BA10 /* ContentView.swift */,
-				7639BE2826C43C810043BA10 /* MainMenu.swift */,
-				76AC4E9A26C874BF001274C4 /* GameState.swift */,
-				763183D126C76181009003B5 /* NameInput.swift */,
-				76AC4E9826C871C0001274C4 /* intermediate.swift */,
-				763183CF26C73A19009003B5 /* HowToPlay.swift */,
 				7639BDFF26C439D30043BA10 /* Assets.xcassets */,
 				7639BE0426C439D30043BA10 /* Info.plist */,
 				7639BE0126C439D30043BA10 /* Preview Content */,
@@ -175,6 +168,29 @@
 				7639BE1A26C439D30043BA10 /* Info.plist */,
 			);
 			path = "SpyfallOffline-IOSUITests";
+			sourceTree = "<group>";
+		};
+		76AC4EA926C89AF9001274C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76AC4E9826C871C0001274C4 /* intermediate.swift */,
+				763183C026C7107F009003B5 /* Menu2.swift */,
+				7639BDFD26C439D10043BA10 /* ContentView.swift */,
+				7639BE2826C43C810043BA10 /* MainMenu.swift */,
+				763183CF26C73A19009003B5 /* HowToPlay.swift */,
+				763183D126C76181009003B5 /* NameInput.swift */,
+				76AC4E9A26C874BF001274C4 /* GameState.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76AC4EAB26C89B28001274C4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				76AC4EA126C8860A001274C4 /* spyfall1.json */,
+				76AC4EA026C8860A001274C4 /* spyfall2.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

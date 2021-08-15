@@ -9,20 +9,25 @@ import Foundation
 
 class GameData {
     static var numberOfPlayers: Int = 0
-    static var names: Array<String> = []
     static var playerList: Array<Player> = []
-    static var locationDict: Dictionary<String,Array<String>> = [:]
     static var locations: Array<Location> = []
+    static var location: Int = 0
     
     
-    func makePlayerList(list: Array<String> ) {
+    class func makePlayerList(list: Array<String> ) {
         for name in list {
             GameData.playerList.append(Player(name: name, role: "null"))
         }
     }
     
-    func assignRoles(location: String) {
-
+    class func assignRolesLocation() {
+        GameData.location = Int.random(in: 0..<GameData.locations.count)
+        
+        for player in GameData.playerList {
+            player.role = GameData.locations[GameData.location].roles[Int.random(in: 1..<GameData.locations[GameData.location].roles.count)]
+        }
+        
+        GameData.playerList[Int.random(in: 0..<GameData.playerList.count)].role = "You are the Spy!"
     }
     
     class func parse(json: Data) {

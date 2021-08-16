@@ -14,51 +14,29 @@ struct HowToPlay: View {
     var body: some View {
         ScrollView (showsIndicators: false) {
             Text("How to Play Spyfall")
-                .font(.title)
+                .font(Font.custom("Raleway", size: 32))
             Divider()
                 .frame(height: 30)
             
             VStack {
-                Text("Players")
-                Spacer()
-                    .frame(height: 30)
-                HStack {
-                    Text("One Spy 4-6")
-                    Text("Two Spies 6-8")
-                    
-                }
-            }
-            VStack {
-                Text("The easiest way to learn how to play Spyfall would be to watch someone else play, as it will help you get a feel for the dynamic of the game. Here's a video on YouTube of some people playing:").padding()
+                Text("The easiest way to learn how to play Spyfall would be to watch someone else play, as it will help you get a feel for the dynamic of the game. Here's a video on YouTube of some people playing:").padding(.bottom)
                 Text("When the game begins, one random player will become the ") +
                 Text("spy").foregroundColor(Color.red) +
                 Text(", and all others will be given a location, and a role within the location. For example, if the location of a round was 'restaurant,' one player might be the chef, another the waiter, another the customer, etc.")
                 Text("The players will not know who the spy is, and the spy will not know the location.").padding()
-            }
+            }.fixedSize(horizontal: false, vertical: true)
             VStack {
                 Text("Players take turns asking questions to each other, doing their best not to outright reveal the location in their questions and answers, but not being too vague as to raise suspicion.")
                 Text("The non-spy group of players wins if they unanimously agree on the identity of the spy player.").padding()
                 Text("The spy wins if they figure out the location, which they have one chance to yell out at any time during the round. The spy also wins if the other players unanimously accuse someone else, or cannot unanimously decide on someone to accuse.")
-            }
+            }.fixedSize(horizontal: false, vertical: true)
             Spacer()
-            Button(action: {
-                viewState.currentState = "MainMenu"
-            }) {
-                Text("Go Back")
-                    .fontWeight(.bold)
-                    .foregroundColor(.black
-                    )
-                    .padding()
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.gray, lineWidth: 5)
-                            .padding(.horizontal)
-                            .frame(width: 180.0, height: 50.0)
-                    )
-            }
+                .frame(height: 20)
+            ViewButton(viewState: viewState, nextState: "MainMenu", text: "Go Back", size: 15)
         }
         .padding()
         .multilineTextAlignment(.center)
+        
     }
 }
 

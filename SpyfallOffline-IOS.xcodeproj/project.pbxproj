@@ -19,7 +19,10 @@
 		7639BE0E26C439D30043BA10 /* SpyfallOffline_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE0D26C439D30043BA10 /* SpyfallOffline_IOSTests.swift */; };
 		7639BE1926C439D30043BA10 /* SpyfallOffline_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE1826C439D30043BA10 /* SpyfallOffline_IOSUITests.swift */; };
 		7639BE2926C43C810043BA10 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639BE2826C43C810043BA10 /* MainMenu.swift */; };
+		76478FE526CB039100938E0A /* ViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76478FE426CB039100938E0A /* ViewButton.swift */; };
 		766DE5F826C777F50008398B /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766DE5F726C777F50008398B /* GameData.swift */; };
+		767FC6E326C9D901004863D3 /* Raleway-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 767FC6E126C9D901004863D3 /* Raleway-Italic-VariableFont_wght.ttf */; };
+		767FC6E426C9D901004863D3 /* Raleway-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 767FC6E226C9D901004863D3 /* Raleway-VariableFont_wght.ttf */; };
 		76AC4E9926C871C0001274C4 /* intermediate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4E9826C871C0001274C4 /* intermediate.swift */; };
 		76AC4E9B26C874BF001274C4 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4E9A26C874BF001274C4 /* GameState.swift */; };
 		76AC4EA226C8860A001274C4 /* spyfall2.json in Resources */ = {isa = PBXBuildFile; fileRef = 76AC4EA026C8860A001274C4 /* spyfall2.json */; };
@@ -64,7 +67,10 @@
 		7639BE1826C439D30043BA10 /* SpyfallOffline_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyfallOffline_IOSUITests.swift; sourceTree = "<group>"; };
 		7639BE1A26C439D30043BA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7639BE2826C43C810043BA10 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		76478FE426CB039100938E0A /* ViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewButton.swift; sourceTree = "<group>"; };
 		766DE5F726C777F50008398B /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		767FC6E126C9D901004863D3 /* Raleway-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		767FC6E226C9D901004863D3 /* Raleway-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		76AC4E9826C871C0001274C4 /* intermediate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intermediate.swift; sourceTree = "<group>"; };
 		76AC4E9A26C874BF001274C4 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		76AC4EA026C8860A001274C4 /* spyfall2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spyfall2.json; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 				763183CF26C73A19009003B5 /* HowToPlay.swift */,
 				763183D126C76181009003B5 /* NameInput.swift */,
 				76AC4E9A26C874BF001274C4 /* GameState.swift */,
+				76478FE426CB039100938E0A /* ViewButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +194,8 @@
 		76AC4EAB26C89B28001274C4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				767FC6E126C9D901004863D3 /* Raleway-Italic-VariableFont_wght.ttf */,
+				767FC6E226C9D901004863D3 /* Raleway-VariableFont_wght.ttf */,
 				76AC4EA126C8860A001274C4 /* spyfall1.json */,
 				76AC4EA026C8860A001274C4 /* spyfall2.json */,
 			);
@@ -297,9 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7639BE0326C439D30043BA10 /* Preview Assets.xcassets in Resources */,
+				767FC6E426C9D901004863D3 /* Raleway-VariableFont_wght.ttf in Resources */,
 				76AC4EA326C8860A001274C4 /* spyfall1.json in Resources */,
 				7639BE0026C439D30043BA10 /* Assets.xcassets in Resources */,
 				76AC4EA226C8860A001274C4 /* spyfall2.json in Resources */,
+				767FC6E326C9D901004863D3 /* Raleway-Italic-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +337,7 @@
 			files = (
 				76AC4EA626C88AAB001274C4 /* Location.swift in Sources */,
 				76AC4E9926C871C0001274C4 /* intermediate.swift in Sources */,
+				76478FE526CB039100938E0A /* ViewButton.swift in Sources */,
 				7639BDFE26C439D10043BA10 /* ContentView.swift in Sources */,
 				763183D026C73A19009003B5 /* HowToPlay.swift in Sources */,
 				76AC4EA826C88B72001274C4 /* Locations.swift in Sources */,

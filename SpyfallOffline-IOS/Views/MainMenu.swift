@@ -97,22 +97,6 @@ struct MainMenu: View {
                     }
                 }
                 Button(action: {
-                    viewState.currentState = "Leaderboard"
-                }) {
-                    Text("Leaderboards")
-                        .foregroundColor(.black
-                        )
-                        .padding()
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color.gray, lineWidth: 5)
-                                .padding(.horizontal)
-                                .frame(width: 180.0, height: 50.0)
-                        )
-                }
-                .frame(width: 143.0)
-                .padding(.top)
-                Button(action: {
                     viewState.currentState = "HowtoPlay"
                 }) {
                     Text("How to Play")
@@ -129,6 +113,22 @@ struct MainMenu: View {
                 .frame(width: 143.0)
                 .padding(.top)
             }
+            Button(action: {
+                viewState.currentState = "Leaderboard"
+            }) {
+                Text("Coming Soon...")
+                    .foregroundColor(.black
+                    )
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.gray, lineWidth: 5)
+                            .padding(.horizontal)
+                            .frame(width: 180.0, height: 50.0)
+                    )
+            }
+            .frame(width: 143.0)
+            .padding(.top)
             VStack {
                 Divider().padding(20)
                 Button(action: {

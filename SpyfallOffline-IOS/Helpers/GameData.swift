@@ -58,4 +58,9 @@ class GameData {
             GameData.locations = jsonPetitions.locations
         }
     }
+    class func timeString(time:TimeInterval) -> String {
+        let minutes = Int(time) / 60 % 60
+        let seconds = Int(time) % 60
+        return String(format: "%2d:%02d", minutes, seconds)
+    }
 }

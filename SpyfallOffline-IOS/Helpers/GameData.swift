@@ -13,10 +13,31 @@ class GameData {
     static var locations: Array<Location> = []
     static var location: Int = 0
     
+    class func initialNameInput() -> Array<String> {
+        var tempArray = [String]()
+        if numberOfPlayers >= 1 {
+            for _ in 1...numberOfPlayers {
+                tempArray.append("")
+            }
+        }
+        return tempArray
+    }
+    
+    class func checkEmpty(list: Array<String>) -> Bool {
+        var check = false
+        for name in list {
+            if name != "" {
+                check = true
+            }
+        }
+        return check
+    }
     
     class func makePlayerList(list: Array<String> ) {
         for name in list {
-            GameData.playerList.append(Player(name: name, role: "null"))
+            if name != "" {
+                GameData.playerList.append(Player(name: name, role: "null"))
+            }
         }
     }
     

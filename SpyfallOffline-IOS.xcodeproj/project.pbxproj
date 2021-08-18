@@ -182,8 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				76AC4E9826C871C0001274C4 /* intermediate.swift */,
-				763183C026C7107F009003B5 /* Menu2.swift */,
 				7639BDFD26C439D10043BA10 /* ContentView.swift */,
+				763183C026C7107F009003B5 /* Menu2.swift */,
 				7639BE2826C43C810043BA10 /* MainMenu.swift */,
 				763183CF26C73A19009003B5 /* HowToPlay.swift */,
 				763183D126C76181009003B5 /* NameInput.swift */,

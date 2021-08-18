@@ -14,12 +14,13 @@ struct MainMenu: View {
     @State private var showLocationOptions = false
     @State private var playerCount: Double = 0
     var body: some View {
-        ScrollView{
+        ScrollView (showsIndicators: false){
             VStack {
                 Text("Welcome to Offline Spyfall").font(Font.custom("Raleway", size: 32)).multilineTextAlignment(.center).padding(.bottom, 1)
                 HStack {
                     Link("(Adapted from spyfall.tannerkrewson.com)", destination: URL(string: "https://spyfall.tannerkrewson.com/")!)
                 }.foregroundColor(.gray)
+                
                 Divider().padding(.vertical, 15.0).padding(.horizontal, 15)
                 
                 VStack {
@@ -134,7 +135,7 @@ struct MainMenu: View {
                 Button(action: {
                     
                 }) {
-                    Text("Go Dark")
+                    Text("Coming Soon...")
                         .foregroundColor(.black
                         )
                         .padding()

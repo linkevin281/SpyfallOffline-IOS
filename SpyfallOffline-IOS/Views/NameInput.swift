@@ -9,36 +9,21 @@ import SwiftUI
 
 struct NameInput: View {
     @StateObject var viewState: ViewState
-    
-    @State var names: [String] = [""]
-    @State var playerCount = 0
-    
+    @State var names: [String] = GameData.initialNameInput()
+    @State var playerCount = GameData.numberOfPlayers
+
     var body: some View {
         ScrollView {
-            HStack {
-                Spacer().frame(width: 10)
-                Button(action:{
-                    viewState.currentState = "MainMenu"
-                }) {
-                    Text("Go Back")
-                        .foregroundColor(.black
-                        )
-                        .padding()
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color.gray, lineWidth: 5)
-                                .padding(.horizontal)
-                                .frame(width: 108.0, height: 30.0)
-                        )
-                }
-                Spacer()
-            }
+            VStack {
+                Text("Enter player names").font(Font.custom("Raleway", size: 32)).multilineTextAlignment(.center).padding(.bottom, 1)
+                Divider().padding(.vertical, 15.0).padding(.horizontal, 15)
+            }.padding(.top).padding(.horizontal)
+            
             ForEach(0..<names.count, id: \.self) { index in
                 TextField("Player \(index+1)", text: Binding(
                             get: { names[index]},
                             set: { names[index] = $0 }))
-                    .foregroundColor(.black
-                    )
+                    .foregroundColor(.black)
                     .padding(.vertical, 20)
                     .padding(.horizontal, 60)
                     .overlay(
@@ -51,19 +36,6 @@ struct NameInput: View {
             .onDelete{ indexSet in
                 names.remove(atOffsets: indexSet)
             }
-//            ForEach(0...playerCount, id: \.self) { index in
-//                TextField("Player \(index+1)", text: self.$names[index])
-//                    .foregroundColor(.black
-//                    )
-//                    .padding(.vertical, 20)
-//                    .padding(.horizontal, 60)
-//                    .overlay(
-//                        RoundedRectangle(cornerRadius: 5)
-//                            .stroke(Color.gray, lineWidth: 5)
-//                            .padding(.horizontal)
-//                            .frame(width: 350, height: 50.0)
-//                    )
-//            }
 
             HStack {
                 Button(action:{
@@ -80,9 +52,10 @@ struct NameInput: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.gray, lineWidth: 5)
                                 .padding(.horizontal)
-                                .frame(width: 108.0, height: 30.0)
+                                .frame(width: 130.0, height: 30.0)
                         )
                 }
+                Spacer().frame(width: 60)
                 Button(action:{
                     self.names.append("")
                     self.playerCount += 1
@@ -95,35 +68,57 @@ struct NameInput: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.gray, lineWidth: 5)
                                 .padding(.horizontal)
-                                .frame(width: 108.0, height: 30.0)
+                                .frame(width: 130, height: 30.0)
                         )
                 }
             }
-            Button(action: {
-                viewState.currentState = "GameState"
-                if let fileLocation = Bundle.main.url(forResource: "spyfall1", withExtension: "json") {
-                    if let data = try? Data(contentsOf: fileLocation) {
-                        GameData.parse(json: data)
-                    }
+            VStack {
+                Divider().padding(.vertical, 15.0).padding(.horizontal, 15)
+            }.padding()
+            HStack {
+                Button(action: {
+                    viewState.currentState = "MainMenu"
+                }) {
+                    Text("Go Back")
+                        .foregroundColor(.blue)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.gray, lineWidth: 5)
+                                .padding(.horizontal)
+                                .frame(width: 180.0, height: 50.0)
+                        )
                 }
-                GameData.makePlayerList(list: names)
-                GameData.assignRolesLocation()
-                
-            }) {
-                Text("Start Game")
-                    .fontWeight(.bold)
-                    .foregroundColor(.black
-                    )
-                    .padding()
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.gray, lineWidth: 5)
-                            .padding(.horizontal)
-                            .frame(width: 180.0, height: 50.0)
-                    )
+                .frame(width: 143.0)
+                Spacer().frame(width: 25)
+                Button(action: {
+                    if (GameData.checkEmpty(list: names)) {
+                        viewState.currentState = "GameState"
+                        if let fileLocation = Bundle.main.url(forResource: "spyfall1", withExtension: "json") {
+                            if let data = try? Data(contentsOf: fileLocation) {
+                                GameData.parse(json: data)
+                            }
+                        }
+                        GameData.makePlayerList(list: names)
+                        GameData.assignRolesLocation()
+                    }
+
+                    
+                }) {
+                    Text("Start Game")
+                        .foregroundColor(.red)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.gray, lineWidth: 5)
+                                .padding(.horizontal)
+                                .frame(width: 180.0, height: 50.0)
+                        )
+                }
+                .frame(width: 143.0)
             }
-            .frame(width: 143.0)
         }
+        .font(Font.custom("Raleway", size: 16))
     }
 }
 

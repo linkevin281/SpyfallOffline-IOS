@@ -12,6 +12,7 @@ class GameData {
     static var playerList: Array<Player> = []
     static var locations: Array<Location> = []
     static var location: Int = 0
+    static var locationSet: String = "Set1"
     
     class func initialNameInput() -> Array<String> {
         var tempArray = [String]()

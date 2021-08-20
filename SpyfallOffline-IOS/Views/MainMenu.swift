@@ -52,14 +52,15 @@ struct MainMenu: View {
                         Slider(value: $playerCount, in: 0...20, step: 1)
                         Text("\(Int(playerCount))" + " Players")
                             .frame(width: 100)
+                            .padding(.trailing, 7.0)
                         Button(action: {
                             GameData.numberOfPlayers = Int(playerCount)
                             viewState.currentState = "NameInput"
                         }) {
                             Text("Continue")
-                                .foregroundColor(.black
-                                )
+                                .foregroundColor(.red)
                                 .padding()
+                                .font(Font.custom("Raleway", size: 12))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 5)
                                         .stroke(Color.gray, lineWidth: 5)
@@ -67,6 +68,7 @@ struct MainMenu: View {
                                         .frame(width: 108.0, height: 30.0)
                                 )
                         }
+                        .padding(.trailing, 5.0)
                         .frame(width: 143.0)
                     }
                     .padding(.horizontal, 30.0)
@@ -91,11 +93,35 @@ struct MainMenu: View {
                 .padding(.top)
                 if showLocationOptions {
                     HStack {
-                        ViewButton(viewState: viewState, nextState: "", text: "Set 1", size: 5)
-                        ViewButton(viewState: viewState, nextState: "", text: "Set 2", size: 5)
-                        ViewButton(viewState: viewState, nextState: "", text: "Set 3", size: 5)
-                 
-                    }
+                        Button(action: {
+                        
+                        }) {
+                            Text("Spyfall 1")
+                                .foregroundColor(.blue)
+                                .font(Font.custom("Raleway", size: 12))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 5)
+                                        .stroke(Color.gray, lineWidth: 5)
+                                        .padding(.horizontal)
+                                        .frame(width: 135.0, height: 30.0)
+                                )
+                        }
+                        .frame(width: 135)
+                        Button(action: {
+
+                        }) {
+                            Text("Spyfall 2")
+                                .foregroundColor(.red)
+                                .font(Font.custom("Raleway", size: 12))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 5)
+                                        .stroke(Color.gray, lineWidth: 5)
+                                        .padding(.horizontal)
+                                        .frame(width: 135, height: 30)
+                                )
+                        }
+                        .frame(width: 135)
+                    }.padding(.top)
                 }
                 Button(action: {
                     viewState.currentState = "HowtoPlay"

@@ -30,6 +30,7 @@
 		76AC4EA326C8860A001274C4 /* spyfall1.json in Resources */ = {isa = PBXBuildFile; fileRef = 76AC4EA126C8860A001274C4 /* spyfall1.json */; };
 		76AC4EA626C88AAB001274C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4EA526C88AAB001274C4 /* Location.swift */; };
 		76AC4EA826C88B72001274C4 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4EA726C88B72001274C4 /* Locations.swift */; };
+		76CF4AB826CDC125008CD1A2 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF4AB726CDC125008CD1A2 /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		76AC4EA126C8860A001274C4 /* spyfall1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spyfall1.json; sourceTree = "<group>"; };
 		76AC4EA526C88AAB001274C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		76AC4EA726C88B72001274C4 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		76CF4AB726CDC125008CD1A2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				76AC4E9A26C874BF001274C4 /* GameState.swift */,
 				76478FE426CB039100938E0A /* ViewButton.swift */,
 				76478FE626CB30A100938E0A /* YoutubeEmbed.swift */,
+				76CF4AB726CDC125008CD1A2 /* LocationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76478FE726CB30A100938E0A /* YoutubeEmbed.swift in Sources */,
+				76CF4AB826CDC125008CD1A2 /* LocationView.swift in Sources */,
 				76AC4EA626C88AAB001274C4 /* Location.swift in Sources */,
 				76AC4E9926C871C0001274C4 /* intermediate.swift in Sources */,
 				76478FE526CB039100938E0A /* ViewButton.swift in Sources */,

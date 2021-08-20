@@ -45,8 +45,8 @@ struct NameInput: View {
                     }
                 }) {
                     Text("Delete Last")
-                        .foregroundColor(.black
-                        )
+                        .foregroundColor(.black)
+                        .font(Font.custom("Raleway", size: 12))
                         .padding()
                         .overlay(
                             RoundedRectangle(cornerRadius: 5)
@@ -61,8 +61,8 @@ struct NameInput: View {
                     self.playerCount += 1
                 }) {
                     Text("Add more")
-                        .foregroundColor(.black
-                        )
+                        .foregroundColor(.black)
+                        .font(Font.custom("Raleway", size: 12))
                         .padding()
                         .overlay(
                             RoundedRectangle(cornerRadius: 5)

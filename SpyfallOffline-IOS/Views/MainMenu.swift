@@ -15,6 +15,8 @@ struct MainMenu: View {
     @State private var playerCount: Double = 0
     var body: some View {
         ScrollView (showsIndicators: false){
+            Spacer()
+                .frame(height: 40)
             VStack {
                 Text("Welcome to Offline Spyfall").font(Font.custom("Raleway", size: 32)).multilineTextAlignment(.center).padding(.bottom, 1)
                 HStack {
@@ -180,6 +182,7 @@ struct MainMenu: View {
             Spacer()
         }
         .padding()
+        .ignoresSafeArea()
         .font(Font.custom("Raleway", size: 15)).multilineTextAlignment(.center)
     }
 }

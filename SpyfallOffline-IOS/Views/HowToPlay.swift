@@ -13,6 +13,8 @@ struct HowToPlay: View {
     
     var body: some View {
         ScrollView (showsIndicators: false) {
+            Spacer()
+                .frame(height: 40)
             Text("How to Play Spyfall")
                 .font(Font.custom("Raleway", size: 32))
             Divider()
@@ -33,9 +35,12 @@ struct HowToPlay: View {
             Spacer()
                 .frame(height: 20)
             ViewButton(viewState: viewState, nextState: "MainMenu", text: "Go Back", size: 10)
+            Spacer()
+                .frame(height: 25)
         }
         .padding()
         .multilineTextAlignment(.center)
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .font(Font.custom("Raleway", size: 16))
     }
 }

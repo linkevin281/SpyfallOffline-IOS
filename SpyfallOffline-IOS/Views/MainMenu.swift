@@ -96,7 +96,9 @@ struct MainMenu: View {
                 if showLocationOptions {
                     HStack {
                         Button(action: {
-                        
+                            GameData.locationSet = "Spyfall 1"
+                            GameData.loadLocations()
+                            viewState.currentState = "LocationView"
                         }) {
                             Text("Spyfall 1")
                                 .foregroundColor(.blue)
@@ -110,7 +112,9 @@ struct MainMenu: View {
                         }
                         .frame(width: 135)
                         Button(action: {
-
+                            GameData.locationSet = "Spyfall 2"
+                            GameData.loadLocations()
+                            viewState.currentState = "LocationView"
                         }) {
                             Text("Spyfall 2")
                                 .foregroundColor(.red)

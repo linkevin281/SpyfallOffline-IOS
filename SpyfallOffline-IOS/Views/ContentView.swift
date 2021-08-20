@@ -26,6 +26,10 @@ struct ContentView: View {
             intermediate(viewState: viewState)
         case "GameState":
             GameState(viewState: viewState)
+        case "LocationView":
+            LocationView(viewState: viewState, inGame: false)
+        case "LocationInGame":
+            LocationView(viewState: viewState, inGame: true)
         default:
             MainMenu(viewState: viewState)
         }

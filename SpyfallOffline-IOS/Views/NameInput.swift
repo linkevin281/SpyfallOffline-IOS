@@ -94,11 +94,7 @@ struct NameInput: View {
                 Button(action: {
                     if (GameData.checkEmpty(list: names)) {
                         viewState.currentState = "GameState"
-                        if let fileLocation = Bundle.main.url(forResource: "spyfall1", withExtension: "json") {
-                            if let data = try? Data(contentsOf: fileLocation) {
-                                GameData.parse(json: data)
-                            }
-                        }
+                        GameData.loadLocations()
                         GameData.makePlayerList(list: names)
                         GameData.assignRolesLocation()
                     }

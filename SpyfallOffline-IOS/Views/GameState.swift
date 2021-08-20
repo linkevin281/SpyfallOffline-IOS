@@ -50,6 +50,11 @@ struct GameState: View {
                         Spacer().frame(width: 6)
                     }
                     Text("Tap to Pause").foregroundColor(.gray).font(Font.custom("Raleway", size: 16))
+                    Button(action: {
+                        viewState.currentState = "LocationInGame"
+                    }) {
+                        Text("Location Set: \(GameData.locationSet)").font(Font.custom("Raleway", size: 16)).foregroundColor(.black).padding(.top, 5)
+                    }
                     Divider().padding(.top, 15.0).padding(.horizontal, 15)
                 }.padding()
                 ForEach(players, id: \.name) { player in

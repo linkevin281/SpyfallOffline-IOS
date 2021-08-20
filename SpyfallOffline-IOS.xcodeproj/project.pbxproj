@@ -26,11 +26,12 @@
 		767FC6E426C9D901004863D3 /* Raleway-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 767FC6E226C9D901004863D3 /* Raleway-VariableFont_wght.ttf */; };
 		76AC4E9926C871C0001274C4 /* intermediate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4E9826C871C0001274C4 /* intermediate.swift */; };
 		76AC4E9B26C874BF001274C4 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4E9A26C874BF001274C4 /* GameState.swift */; };
-		76AC4EA226C8860A001274C4 /* spyfall2.json in Resources */ = {isa = PBXBuildFile; fileRef = 76AC4EA026C8860A001274C4 /* spyfall2.json */; };
-		76AC4EA326C8860A001274C4 /* spyfall1.json in Resources */ = {isa = PBXBuildFile; fileRef = 76AC4EA126C8860A001274C4 /* spyfall1.json */; };
+		76AC4EA226C8860A001274C4 /* Spyfall 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 76AC4EA026C8860A001274C4 /* Spyfall 2.json */; };
+		76AC4EA326C8860A001274C4 /* Spyfall 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 76AC4EA126C8860A001274C4 /* Spyfall 1.json */; };
 		76AC4EA626C88AAB001274C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4EA526C88AAB001274C4 /* Location.swift */; };
 		76AC4EA826C88B72001274C4 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4EA726C88B72001274C4 /* Locations.swift */; };
 		76CF4AB826CDC125008CD1A2 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF4AB726CDC125008CD1A2 /* LocationView.swift */; };
+		76CF4ABA26D06193008CD1A2 /* LocationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF4AB926D06193008CD1A2 /* LocationBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,11 +77,12 @@
 		767FC6E226C9D901004863D3 /* Raleway-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		76AC4E9826C871C0001274C4 /* intermediate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intermediate.swift; sourceTree = "<group>"; };
 		76AC4E9A26C874BF001274C4 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
-		76AC4EA026C8860A001274C4 /* spyfall2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spyfall2.json; sourceTree = "<group>"; };
-		76AC4EA126C8860A001274C4 /* spyfall1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spyfall1.json; sourceTree = "<group>"; };
+		76AC4EA026C8860A001274C4 /* Spyfall 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Spyfall 2.json"; sourceTree = "<group>"; };
+		76AC4EA126C8860A001274C4 /* Spyfall 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Spyfall 1.json"; sourceTree = "<group>"; };
 		76AC4EA526C88AAB001274C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		76AC4EA726C88B72001274C4 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		76CF4AB726CDC125008CD1A2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		76CF4AB926D06193008CD1A2 /* LocationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		763183C626C71F1A009003B5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				76CF4AB926D06193008CD1A2 /* LocationBox.swift */,
 				763183CC26C7369C009003B5 /* ViewState.swift */,
 				76AC4EA526C88AAB001274C4 /* Location.swift */,
 				763183D326C765FE009003B5 /* Player.swift */,
@@ -202,8 +205,8 @@
 			children = (
 				767FC6E126C9D901004863D3 /* Raleway-Italic-VariableFont_wght.ttf */,
 				767FC6E226C9D901004863D3 /* Raleway-VariableFont_wght.ttf */,
-				76AC4EA126C8860A001274C4 /* spyfall1.json */,
-				76AC4EA026C8860A001274C4 /* spyfall2.json */,
+				76AC4EA126C8860A001274C4 /* Spyfall 1.json */,
+				76AC4EA026C8860A001274C4 /* Spyfall 2.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -313,9 +316,9 @@
 			files = (
 				7639BE0326C439D30043BA10 /* Preview Assets.xcassets in Resources */,
 				767FC6E426C9D901004863D3 /* Raleway-VariableFont_wght.ttf in Resources */,
-				76AC4EA326C8860A001274C4 /* spyfall1.json in Resources */,
+				76AC4EA326C8860A001274C4 /* Spyfall 1.json in Resources */,
 				7639BE0026C439D30043BA10 /* Assets.xcassets in Resources */,
-				76AC4EA226C8860A001274C4 /* spyfall2.json in Resources */,
+				76AC4EA226C8860A001274C4 /* Spyfall 2.json in Resources */,
 				767FC6E326C9D901004863D3 /* Raleway-Italic-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76478FE726CB30A100938E0A /* YoutubeEmbed.swift in Sources */,
+				76CF4ABA26D06193008CD1A2 /* LocationBox.swift in Sources */,
 				76CF4AB826CDC125008CD1A2 /* LocationView.swift in Sources */,
 				76AC4EA626C88AAB001274C4 /* Location.swift in Sources */,
 				76AC4E9926C871C0001274C4 /* intermediate.swift in Sources */,

@@ -12,7 +12,7 @@ class GameData {
     static var playerList: Array<Player> = []
     static var locations: Array<Location> = []
     static var location: Int = 0
-    static var locationSet: String = "Set1"
+    static var locationSet: String = "Spyfall 1"
     
     class func initialNameInput() -> Array<String> {
         var tempArray = [String]()
@@ -52,12 +52,17 @@ class GameData {
         GameData.playerList[Int.random(in: 0..<GameData.playerList.count)].role = "You are the Spy!"
     }
     
-    class func parse(json: Data) {
-        let decoder = JSONDecoder()
+    class func loadLocations() {
+        if let fileLocation = Bundle.main.url(forResource: locationSet, withExtension: "json") {
+            if let data = try? Data(contentsOf: fileLocation) {
+                let decoder = JSONDecoder()
 
-        if let jsonPetitions = try? decoder.decode(Locations.self, from: json) {
-            GameData.locations = jsonPetitions.locations
+                if let jsonPetitions = try? decoder.decode(Locations.self, from: data) {
+                    GameData.locations = jsonPetitions.locations
+                }
+            }
         }
+        
     }
     class func timeString(time:TimeInterval) -> String {
         let minutes = Int(time) / 60 % 60

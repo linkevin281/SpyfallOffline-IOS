@@ -59,7 +59,7 @@
 		763183D326C765FE009003B5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7639BDF826C439D10043BA10 /* SpyfallOffline-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpyfallOffline-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7639BDFB26C439D10043BA10 /* SpyfallOffline_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyfallOffline_IOSApp.swift; sourceTree = "<group>"; };
-		7639BDFD26C439D10043BA10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7639BDFD26C439D10043BA10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		7639BDFF26C439D30043BA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7639BE0226C439D30043BA10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7639BE0426C439D30043BA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };

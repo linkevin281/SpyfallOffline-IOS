@@ -12,25 +12,25 @@ struct GameState: View {
     @StateObject var viewState: ViewState
     @State var players: Array<Player> = GameData.playerList
     @State var showPlayer: Player = Player(name: "null", role: "null")
-    @State var timeRemaining = 480
     @State var timerWorking = false
-    
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State var timeRemaining = GameData.timeRemaining
     
     var body: some View {
+        if (timerWorking) {
+            Text("").onReceive(GameData.timer, perform: { _ in
+                if GameData.timeRemaining > 0 {
+                    GameData.timeRemaining -= 1
+                }
+                if timeRemaining > 0 {
+                    timeRemaining -= 1
+                }
+            })
+        }
         if (showPlayer.name == "null" && showPlayer.name == "null") {
             ScrollView {
                 VStack {
                     HStack {
                         ZStack{
-                            if (timerWorking) {
-                                Text("\(GameData.timeString(time: TimeInterval(timeRemaining)))")
-                                    .foregroundColor(.blue).font(Font.custom("Raleway", size: 32)).onReceive(timer) { _ in
-                                        if timeRemaining > 0 {
-                                            timeRemaining -= 1
-                                        }
-                                    }
-                            }
                             Button(action: {
                                 timerWorking.toggle()
                             }) {

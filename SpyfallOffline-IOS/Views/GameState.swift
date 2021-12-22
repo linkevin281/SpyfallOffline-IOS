@@ -12,11 +12,11 @@ struct GameState: View {
     @StateObject var viewState: ViewState
     @State var players: Array<Player> = GameData.playerList
     @State var showPlayer: Player = Player(name: "null", role: "null")
-    @State var timerWorking = false
+    @State var timerWorking = GameData.timerWorking
     @State var timeRemaining = GameData.timeRemaining
     
     var body: some View {
-        if (timerWorking) {
+        if (GameData.timerWorking) {
             Text("").onReceive(GameData.timer, perform: { _ in
                 if GameData.timeRemaining > 0 {
                     GameData.timeRemaining -= 1
@@ -33,6 +33,7 @@ struct GameState: View {
                         ZStack{
                             Button(action: {
                                 timerWorking.toggle()
+                                GameData.timerWorking.toggle()
                             }) {
                                 if (!timerWorking) {
                                     Text("\(GameData.timeString(time: TimeInterval(timeRemaining)))")

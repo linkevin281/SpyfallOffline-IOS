@@ -147,7 +147,6 @@ struct MainMenu: View {
                 .padding(.top)
             }
             Button(action: {
-                viewState.currentState = "Leaderboard"
             }) {
                 Text("Coming Soon...")
                     .foregroundColor(.black

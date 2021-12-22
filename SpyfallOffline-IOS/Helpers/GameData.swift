@@ -15,6 +15,7 @@ class GameData {
     static var locationSet: String = "Spyfall 1"
     static let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     static var timeRemaining = 480
+    static var timerWorking = false
     
     class func initialNameInput() -> Array<String> {
         var tempArray = [String]()

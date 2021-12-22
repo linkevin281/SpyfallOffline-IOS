@@ -14,6 +14,21 @@ struct ViewButton: View {
     @State var size: Int
     
     var body: some View {
+//        Button(action: {
+//            viewState.currentState = nextState
+//        }) {
+//            Text(text)
+//                .foregroundColor(.black
+//                )
+//                .padding()
+//                .overlay(
+//                    RoundedRectangle(cornerRadius: 5)
+//                        .stroke(Color.gray, lineWidth: 5)
+//                        .padding(.horizontal)
+//                        .frame(width: 18*CGFloat(size), height: 5*CGFloat(size))
+//                )
+//        }
+//        .frame(width: 14.3*CGFloat(size))
         Button(action: {
             viewState.currentState = nextState
         }) {
@@ -25,10 +40,9 @@ struct ViewButton: View {
                     RoundedRectangle(cornerRadius: 5)
                         .stroke(Color.gray, lineWidth: 5)
                         .padding(.horizontal)
-                        .frame(width: 18*CGFloat(size), height: 5*CGFloat(size))
+                        .frame(width: 180.0, height: 50.0)
                 )
         }
-        .frame(width: 14.3*CGFloat(size))
     }
 }
 

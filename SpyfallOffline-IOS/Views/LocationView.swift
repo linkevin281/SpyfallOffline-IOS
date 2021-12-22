@@ -13,6 +13,13 @@ struct LocationView: View {
     @State var inGame: Bool
     
     var body: some View {
+        if (GameData.timerWorking) {
+            Text("").onReceive(GameData.timer, perform: { _ in
+                if GameData.timeRemaining > 0 {
+                    GameData.timeRemaining -= 1
+                }
+            })
+        }
         ScrollView(showsIndicators: false) {
             VStack {
                 Spacer()

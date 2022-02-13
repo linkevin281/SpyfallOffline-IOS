@@ -7,7 +7,8 @@
 
 import Foundation
 
-
+// Player object
+// Class allows for inheritance, type casting 
 class Player {
     var name: String
     var role: String

@@ -110,10 +110,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76115F9927B979A1000418C0 /* Component Views */ = {
+			isa = PBXGroup;
+			children = (
+				76478FE626CB30A100938E0A /* YoutubeEmbed.swift */,
+				76CF4AB926D06193008CD1A2 /* LocationBox.swift */,
+				76CF4AB726CDC125008CD1A2 /* LocationView.swift */,
+				76478FE426CB039100938E0A /* ViewButton.swift */,
+			);
+			path = "Component Views";
+			sourceTree = "<group>";
+		};
 		763183C626C71F1A009003B5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				76CF4AB926D06193008CD1A2 /* LocationBox.swift */,
 				763183CC26C7369C009003B5 /* ViewState.swift */,
 				76AC4EA526C88AAB001274C4 /* Location.swift */,
 				763183D326C765FE009003B5 /* Player.swift */,
@@ -146,6 +156,7 @@
 		7639BDFA26C439D10043BA10 /* SpyfallOffline-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				76115F9927B979A1000418C0 /* Component Views */,
 				76AC4EAB26C89B28001274C4 /* Assets */,
 				76AC4EA926C89AF9001274C4 /* Views */,
 				763183C626C71F1A009003B5 /* Helpers */,
@@ -193,9 +204,6 @@
 				763183CF26C73A19009003B5 /* HowToPlay.swift */,
 				763183D126C76181009003B5 /* NameInput.swift */,
 				76AC4E9A26C874BF001274C4 /* GameState.swift */,
-				76478FE426CB039100938E0A /* ViewButton.swift */,
-				76478FE626CB30A100938E0A /* YoutubeEmbed.swift */,
-				76CF4AB726CDC125008CD1A2 /* LocationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -518,6 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SpyfallOffline-IOS/Preview Content\"";
 				DEVELOPMENT_TEAM = VJK6SVBV96;
 				ENABLE_PREVIEWS = YES;
@@ -527,6 +536,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "linkevin281.SpyfallOffline-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -540,6 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SpyfallOffline-IOS/Preview Content\"";
 				DEVELOPMENT_TEAM = VJK6SVBV96;
 				ENABLE_PREVIEWS = YES;
@@ -549,6 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "linkevin281.SpyfallOffline-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

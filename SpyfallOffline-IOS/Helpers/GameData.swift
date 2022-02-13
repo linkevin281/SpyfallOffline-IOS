@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Game data class thats static so keeps values view to view and contains functions that handle value changes
 class GameData {
     static var numberOfPlayers: Int = 0
     static var playerList: Array<Player> = []
@@ -17,6 +18,7 @@ class GameData {
     static var timeRemaining = 480
     static var timerWorking = false
     
+    // Initializes the array size to ensure that the ForEach loop has initial size
     class func initialNameInput() -> Array<String> {
         var tempArray = [String]()
         if numberOfPlayers >= 1 {
@@ -27,6 +29,7 @@ class GameData {
         return tempArray
     }
     
+    // Checks array for empty values
     class func checkEmpty(list: Array<String>) -> Bool {
         var check = false
         for name in list {
@@ -37,6 +40,7 @@ class GameData {
         return check
     }
     
+    // Makes player objects from names provided
     class func makePlayerList(list: Array<String> ) {
         for name in list {
             if name != "" {
@@ -45,6 +49,7 @@ class GameData {
         }
     }
     
+    // Randomly assigns roles to playerList dependent on current location
     class func assignRolesLocation() {
         GameData.location = Int.random(in: 0..<GameData.locations.count)
         
@@ -55,6 +60,7 @@ class GameData {
         GameData.playerList[Int.random(in: 0..<GameData.playerList.count)].role = "You are the Spy!"
     }
     
+    // decodes json with location information
     class func loadLocations() {
         if let fileLocation = Bundle.main.url(forResource: locationSet, withExtension: "json") {
             if let data = try? Data(contentsOf: fileLocation) {
@@ -67,6 +73,8 @@ class GameData {
         }
         
     }
+    
+    // Time formatter
     class func timeString(time:TimeInterval) -> String {
         let minutes = Int(time) / 60 % 60
         let seconds = Int(time) % 60

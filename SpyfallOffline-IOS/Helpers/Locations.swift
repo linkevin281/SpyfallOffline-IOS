@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Location array
 struct Locations: Codable {
     var locations: Array<Location>
 }

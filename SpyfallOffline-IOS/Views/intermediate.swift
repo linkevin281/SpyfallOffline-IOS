@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+// deprecated test view
 struct intermediate: View {
     @StateObject var viewState: ViewState
     

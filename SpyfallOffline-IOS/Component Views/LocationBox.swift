@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+// Box with location
 struct LocationBox: View {
     @State var name: NSString
     

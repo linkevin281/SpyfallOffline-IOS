@@ -7,18 +7,23 @@
 
 import SwiftUI
 
+
+// View for inputting player names
 struct NameInput: View {
     @StateObject var viewState: ViewState
     @State var names: [String] = GameData.initialNameInput()
     @State var playerCount = GameData.numberOfPlayers
 
     var body: some View {
+        
+        // bind whole view in gameview
         ScrollView {
             VStack {
                 Text("Enter player names").font(Font.custom("Raleway", size: 32)).multilineTextAlignment(.center).padding(.bottom, 1)
                 Divider().padding(.vertical, 15.0).padding(.horizontal, 15)
             }.padding(.top).padding(.horizontal)
             
+            // for each player, create a field and use them to set names array
             ForEach(0..<names.count, id: \.self) { index in
                 TextField("Player \(index+1)", text: Binding(
                             get: { names[index]},
@@ -37,7 +42,9 @@ struct NameInput: View {
                 names.remove(atOffsets: indexSet)
             }
 
+            
             HStack {
+                // delete from end of array, ensure length is at least 1
                 Button(action:{
                     if (playerCount >= 1) {
                         self.names.removeLast()
@@ -56,6 +63,8 @@ struct NameInput: View {
                         )
                 }
                 Spacer().frame(width: 60)
+                
+                // add to end of array a new empty player
                 Button(action:{
                     self.names.append("")
                     self.playerCount += 1

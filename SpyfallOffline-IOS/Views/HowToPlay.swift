@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+// View to show how to play
 struct HowToPlay: View {
     
     @StateObject var viewState: ViewState

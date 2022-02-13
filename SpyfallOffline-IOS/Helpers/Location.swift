@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Location and roles attached object
+// struct is simpler object to reason
 struct Location: Codable {
     var name:String
     var roles: Array<String>

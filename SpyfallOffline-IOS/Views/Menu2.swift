@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+// deprecated test view
 struct Menu2: View {
     
     @StateObject var viewState: ViewState

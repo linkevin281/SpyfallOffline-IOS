@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+// In game view
 struct GameState: View {
     
     @StateObject var viewState: ViewState
@@ -16,6 +18,8 @@ struct GameState: View {
     @State var timeRemaining = GameData.timeRemaining
     
     var body: some View {
+        
+        // if timer is on then have timer ticking
         if (GameData.timerWorking) {
             Text("").onReceive(GameData.timer, perform: { _ in
                 if GameData.timeRemaining > 0 {
@@ -26,10 +30,15 @@ struct GameState: View {
                 }
             })
         }
+        
+        // show this if single player is not selected
         if (showPlayer.name == "null" && showPlayer.name == "null") {
             ScrollView {
                 VStack {
                     HStack {
+                        
+                        // timer zstack where red and blue are overlayed
+                        // red is paused, blue is working
                         ZStack{
                             Button(action: {
                                 timerWorking.toggle()
@@ -51,6 +60,8 @@ struct GameState: View {
                         Spacer().frame(width: 6)
                     }
                     Text("Tap to Pause").foregroundColor(.gray).font(Font.custom("Raleway", size: 16))
+                    
+                    // Button to view current location set
                     Button(action: {
                         viewState.currentState = "LocationInGame"
                     }) {
@@ -58,9 +69,12 @@ struct GameState: View {
                     }
                     Divider().padding(.top, 15.0).padding(.horizontal, 15)
                 }.padding()
+                
+                // For each player, create a player button that shows them player info
                 ForEach(players, id: \.name) { player in
                     Button(action: {
                         showPlayer = Player(name: player.name, role: player.role)
+                        // set show player info
                     }) {
                         Text("\(player.name)")
                             .fontWeight(.bold)
@@ -69,10 +83,11 @@ struct GameState: View {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
                                     .stroke(Color.gray, lineWidth: 5)
-                                    .frame(width: 300)
+                                    .padding(.horizontal)
+                                    .frame(width: 180.0, height: 50.0)
                             )
                     }
-                    .frame(width: 500.0).padding(.top, 15)
+                    .frame(width: 180.0).padding(.top, 15)
                 }
                 VStack {
                     Divider().padding(.vertical, 15.0).padding(.horizontal, 15)
@@ -114,6 +129,8 @@ struct GameState: View {
                 
             }.font(Font.custom("Raleway", size: 16))
         }
+        
+        // if someone clicks a player, display player info
         else {
             VStack {
                 if (showPlayer.role != "You are the Spy!") {

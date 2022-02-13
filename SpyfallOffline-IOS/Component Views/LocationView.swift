@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+// Location view component
 struct LocationView: View {
     @State var locations: Array<Location> = GameData.locations
     @StateObject var viewState: ViewState

@@ -7,16 +7,23 @@
 
 import SwiftUI
 
+
+// main menu view
 struct MainMenu: View {
     
+    // state object passed to all views
     @StateObject var viewState: ViewState
     @State private var showPlayerSlider = false
     @State private var showLocationOptions = false
     @State private var playerCount: Double = 0
     var body: some View {
+        
+        // Bind whole view in scrolling view
         ScrollView (showsIndicators: false){
             Spacer()
                 .frame(height: 40)
+            
+            // title vstack
             VStack {
                 Text("Welcome to Offline Spyfall").font(Font.custom("Raleway", size: 32)).multilineTextAlignment(.center).padding(.bottom, 1)
                 HStack {
@@ -29,6 +36,8 @@ struct MainMenu: View {
                     Text("Spyfall is based off of the board game designed by Alexandr Ushan. You'll need at least 3 players, but the game is best played with 4-6 players")
                 }
             }
+            
+            // vstack for new game button
             VStack {
                 HStack{
                     Button(action: {
@@ -49,6 +58,8 @@ struct MainMenu: View {
                     .padding(.top, 13)
                     
                 }
+                
+                //show this vstack if new game button pressed
                 if showPlayerSlider {
                     VStack {
                         Slider(value: $playerCount, in: 0...20, step: 1)
@@ -77,6 +88,8 @@ struct MainMenu: View {
                     .padding(.top, 10)
                     .animation(.easeIn(duration: 2))
                 }
+                
+                // button to show locations
                 Button(action: {
                     showLocationOptions.toggle()
                 }) {
@@ -93,6 +106,8 @@ struct MainMenu: View {
                 }
                 .frame(width: 143.0)
                 .padding(.top)
+                
+                // show location sets if location button pressed
                 if showLocationOptions {
                     HStack {
                         Button(action: {
@@ -129,6 +144,8 @@ struct MainMenu: View {
                         .frame(width: 135)
                     }.padding(.top)
                 }
+                
+                // how to play button
                 Button(action: {
                     viewState.currentState = "HowtoPlay"
                 }) {
@@ -146,6 +163,8 @@ struct MainMenu: View {
                 .frame(width: 143.0)
                 .padding(.top)
             }
+            
+            // soon to be location creation menu
             Button(action: {
             }) {
                 Text("Coming Soon...")
@@ -161,6 +180,8 @@ struct MainMenu: View {
             }
             .frame(width: 143.0)
             .padding(.top)
+            
+            // soon to be lights off/lights on
             VStack {
                 Divider().padding(20)
                 Button(action: {

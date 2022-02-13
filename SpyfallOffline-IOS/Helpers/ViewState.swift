@@ -7,6 +7,7 @@
 
 import Foundation
 
+// stores current view state, allows ContentView.swift route views
 class ViewState: ObservableObject {
     
     @Published var currentState: String = ""

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+// View
 struct ContentView: View {
     
     @StateObject var viewState: ViewState
